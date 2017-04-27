@@ -10,3 +10,10 @@ ReactDOM.render(
   <App chat={chat}/>,
   document.getElementById('root')
 );
+
+chat.on('ADD_CALLER', () => {
+  ReactDOM.render(
+    <App chat={chat}/>,
+    document.getElementById('root')
+  );
+});
